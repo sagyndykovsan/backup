@@ -3,7 +3,7 @@ from django.db import models
 
 class Video(models.Model):
     name = models.CharField(max_length=100)
-    video = models.FileField(upload_to="media/video")
+    video = models.FileField(upload_to="video")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -13,7 +13,7 @@ class Video(models.Model):
 
 class Book(models.Model):
     name = models.CharField(max_length=100)
-    book = models.FileField(upload_to="media/book")
+    book = models.FileField(upload_to="book")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -23,7 +23,7 @@ class Book(models.Model):
 
 class Presentation(models.Model):
     name = models.CharField(max_length=100)
-    presentation = models.FileField(upload_to="media/pptx")
+    presentation = models.FileField(upload_to="pptx")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
