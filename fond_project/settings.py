@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'fond_app',
     'scholarship',
     'category',
+    'qa',
 ]
 
 MIDDLEWARE = [
