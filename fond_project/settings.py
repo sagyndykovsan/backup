@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'scholarship',
     'category',
     'qa',
+    'contact',
 ]
 
 MIDDLEWARE = [
