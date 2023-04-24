@@ -41,7 +41,12 @@ INSTALLED_APPS = [
     'scholarship',
     'category',
     'qa',
+# <<<<<<< Updated upstream
     'contact',
+# =======
+    'event',
+
+# >>>>>>> Stashed changes
 ]
 
 MIDDLEWARE = [
