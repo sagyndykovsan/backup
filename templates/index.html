@@ -691,14 +691,23 @@
                     <a class="btn btn-link" href="">Terms & Condition</a>
                     <a class="btn btn-link" href="">Support</a>
                 </div> -->
+
+                <!--             блок который Даниил пытается сделать через админку  и автоматизировать подписку на почту    -->
+                {% load contact_tags %}
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Подписка</h4>
-                    <!-- <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p> -->
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text" placeholder="Ваш email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Отправить</button>
+
+                    <div class="w3layouts-newsletter">
+                {% contact_form %}
                     </div>
                 </div>
+                <!--                <div class="col-lg-3 col-md-6">-->
+<!--                    <h4 class="text-white mb-4">Подписка</h4>-->
+<!--                    &lt;!&ndash; <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p> &ndash;&gt;-->
+<!--                    <div class="position-relative w-100">-->
+<!--                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text" placeholder="Ваш email">-->
+<!--                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Отправить</button>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
         </div>
     </div>
