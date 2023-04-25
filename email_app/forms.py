@@ -9,5 +9,10 @@ class ContactEmailForm(forms.ModelForm):
         model = ContactEmail
         fields = ("email",)
         widgets = {
-            "email": forms.TextInput(attrs={"class": "form-control bg-light border-light w-100 py-3 ps-4 pe-5"})
+            "email": forms.EmailInput(attrs={"class": "form-control bg-light border-light w-100 py-3 ps-4 pe-5",
+                                             "placeholder": "Ваш email"})
+        }
+
+        labels = {
+            'email': ''
         }
