@@ -1,0 +1,13 @@
+<div class="">
+        <h4 class="text-white mb-4">Подписка</h4>
+        <div class="position-relative w-100">
+        <form action="{% url 'contact' %}" method="post" class="w3layouts-newsletter">
+                {% csrf_token %}
+                {{ contact_form }}
+                <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Отправить</button>
+        </form>
+        </div>
+</div>
+
+
+<!--form_class-->
