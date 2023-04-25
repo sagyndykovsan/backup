@@ -79,6 +79,11 @@ h6,
     height: 38px;
 }
 
+.btn-sm {
+    position: absolute;
+    bottom: 22px;
+}
+
 .btn-sm-square {
     width: 32px;
     height: 32px;
