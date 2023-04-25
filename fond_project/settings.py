@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 # =======
     'event',
     'email_app',
+    'news',
 
 # >>>>>>> Stashed changes
 ]
