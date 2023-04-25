@@ -7,7 +7,7 @@ body {
     --primary: #497bb4;
     --secondary: #526860;
     --light: #e8eaf5;
-    --dark: #0F4229;
+    --dark: #000000;
 }
 
 .back-to-top {
@@ -108,14 +108,18 @@ h6,
 
 .navbar .navbar-brand,
 .navbar a.btn {
-    height: 80px
+    height: auto;
+}
+
+.navbar{
+    height: 100px;
 }
 
 .navbar .navbar-nav .nav-link {
     margin-right: 35px;
     padding: 25px 0;
     color: var(--dark);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     outline: none;
 }
@@ -216,6 +220,8 @@ h6,
     color: var(--light);
 }
 
+
+
 .page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
     font-size: 18px;
@@ -243,7 +249,11 @@ h6,
 /*** Service ***/
 .service-item {
     position: relative;
-    text-align: center;
+}
+
+.dop-info {
+    position:absolute;
+    bottom: 22px;
 }
 
 .service-item .service-img {
@@ -275,22 +285,32 @@ h6,
     background: #FFFFFF;
     box-shadow: 0 0 45px rgba(95, 124, 219, 0.507);
     transition: .3s;
+    width: 100%;
+    height: 100%;
 }
 
 .service-item:hover .service-text {
     background: rgba(15, 20, 66, 0.6);
 }
 
-.service-item .service-text h4,
+.service-item .service-text h5,
 .service-item .service-text p {
     transition: .3;
 }
 
-.service-item:hover .service-text h4 {
+.service-item:hover .service-text h5 {
     color: #FFFFFF;
 }
 
 .service-item:hover .service-text p {
+    color: var(--light);
+}
+
+.service-text h4 {
+    color: var(--dark);
+}
+
+.service-item:hover .service-text h4 {
     color: var(--light);
 }
 
@@ -318,7 +338,7 @@ h6,
 }
 
 .service-item:hover .service-text .btn {
-    width: 112px;
+    width: 120px;
 }
 
 
@@ -411,18 +431,18 @@ h6,
 .team-item .team-text {
     position: absolute;
     width: calc(100% - 45px);
-    left: -100%;
+    /*left: -100%;*/
     bottom: 45px;
     padding: 1.5rem;
     background: #FFFFFF;
     border-radius: 0 4px 4px 0;
-    opacity: 0;
+    /*opacity: 0;*/
     transition: .5s;
 }
 
 .team-item:hover .team-text {
-    left: 0;
-    opacity: 1;
+    /*left: 0;*/
+    /*opacity: 1;*/
 }
 
 .team-item .team-social .btn {
@@ -517,7 +537,8 @@ h6,
 
 .copyright {
     color: var(--light);
-    background: #072A19;
+    border-top: 1px solid #fff;
+    background: var(--dark);
 }
 
 .copyright a {
@@ -526,4 +547,133 @@ h6,
 
 .copyright a:hover {
     color: var(--primary);
+}
+
+.accordion .accordion-item {
+    border: none !important;
+}
+
+.accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+.accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid var(--dark) !important;
+}
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+.accordion button:hover, .accordion button:focus {
+    cursor: pointer;
+    color: var(--dark);
+}
+.accordion button:hover::after, .accordion button:focus::after {
+    cursor: pointer;
+    color: var(--dark);
+    border: 1px solid var(--dark);
+}
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+.accordion button[aria-expanded=true] {
+    color: var(--dark);
+}
+.accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+}
+.accordion button[aria-expanded=true] + .accordion-content {
+    opacity: 1;
+    max-height: 100%;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+}
+.social-buttons a{
+    width: 40px;
+}
+.facebook{
+    background: #3b5998;
+}
+.twitter{
+    background: #1DA1F2;
+}
+.instagram{
+    background: #C13584;
+}
+
+
+.text-gray {
+    color: #888
+}
+
+.presentation__date {
+    font-size: 12px;
+}
+
+.border-left {
+    display: flex;
+    align-items: center;
+}
+
+.presentation__tag {
+    font-size: 14px;
+}
+
+.border-left::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 70%;
+    margin: 0 7px;
+    background-color: #888;
 }
