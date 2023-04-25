@@ -686,6 +686,38 @@ h6,
    color: #497bb4;
 }
 
+.elementor-widget-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elementor-section {
+    padding: 20px;
+    border: 1px solid #ccc; /* Добавлено: рамка для видимого блока */
+    border-radius: 5px; /* Добавлено: скругление углов */
+    transition: background-color 0.3s; /* Добавлено: плавное изменение фона */
+}
+
+.elementor-section:hover {
+    background-color: #f0f0f0; /* Добавлено: серый фон при наведении */
+}
+
+.elementor-widget-heading {
+    margin-bottom: 20px;
+}
+
+.elementor-heading-title {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.elementor-heading-title:hover {
+    color: #0073AA;
+    text-decoration: underline;
+}
+
 @media (max-width: 991px) {
           .navbar-collapse {
              background-color: white;
