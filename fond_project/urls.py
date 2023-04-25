@@ -23,5 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('fond_app.urls')),
     path('contact/', include("email_app.urls")),
+    path('scholarship/', include('scholarship.urls')),
+
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
