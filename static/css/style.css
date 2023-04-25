@@ -677,3 +677,17 @@ h6,
     margin: 0 7px;
     background-color: #888;
 }
+
+.dropdown-item{
+     transition: 0.9s;
+}
+
+.dropdown-item:hover{
+   color: #497bb4;
+}
+
+@media (max-width: 991px) {
+          .navbar-collapse {
+             background-color: white;
+    }
+}
