@@ -587,9 +587,20 @@ h6,
     border: 1px solid var(--dark);
 }
 .accordion button .accordion-title {
+    word-wrap: break-word;
     padding: 1em 1.5em 1em 0;
+    width: 97%
 }
 .accordion button .icon {
+    display: inline-block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+/* .accordion button .icon {
     display: inline-block;
     position: absolute;
     top: 50%;
@@ -599,7 +610,9 @@ h6,
     height: 22px;
     border: 1px solid;
     border-radius: 22px;
-}
+} */
+
+
 .accordion button .icon::before {
     display: block;
     position: absolute;

@@ -114,11 +114,16 @@
 
                         {% for qa in question %}
                         <div class="accordion-item">
-
-                            <button id="accordion-button" aria-expanded="false"><span class="accordion-title">{{ qa.question }}</span><span class="icon" aria-hidden="true"></span></button>
+                            <button id="accordion-button" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <span class="accordion-title">{{ qa.question }}           
+                                    </span>
+                                    <span class="icon" aria-hidden="true">
+                                    </span>
+                                </div>
+                            </button>
                             <div class="accordion-content">
                                 <p>
-
                                     {{ qa.answer }}
                                 </p>
                             </div>
