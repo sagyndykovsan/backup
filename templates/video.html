@@ -27,8 +27,7 @@
                 <p>Лектор: {{video.name}}</p>
             </div>
             <div class="col-6">
-                <iframe height="300px" width="580px"   src="{{video.video.url}}"></iframe>
-                 <video src="{{video.video.url}}"> </video>
+                 <video height="300px" width="580px" src="{{video.video.url}}" controls> </video>
             </div>
         </div>
         {% endfor %}
