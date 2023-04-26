@@ -6,7 +6,6 @@ def news(request):
     el = News.objects.all()
     return render(request, "news.html", {"el": el})
 
-
-# def detail(request):
-#     d = News.objects.all()
-#     return render(request, "details.html", {"d": d})
+def detail_news(request):
+    ds = News.objects.all()
+    return render(request, "details_news.html", {"ds": ds})
