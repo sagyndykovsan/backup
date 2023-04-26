@@ -6,6 +6,9 @@ def scholarship(request):
     el = Scholarship.objects.all()
     return render(request, "project.html", {"el": el})
 
+def detail(request):
+    d = Scholarship.objects.all()
+
 
 def scholarship_name(request):
     names = Scholarship.objects.all()

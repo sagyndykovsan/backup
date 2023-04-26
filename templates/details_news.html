@@ -8,7 +8,8 @@
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                    <li class="breadcrumb-item"><a href="news.html">Новости</a></li>
+                    <li class="breadcrumb-item"><a href="about.html">Новости</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{news.name}}</li>
                 </ol>
             </nav>
         </div>
@@ -20,9 +21,7 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5 col-lg-11">
-                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <img src="../../../static/img/service-3.jpg" alt="">
-                </div>
+      
                 <h3 class="wow fadeInUp" data-wow-delay="0.1s">
                     Совместные магистерские программы Фонда Ханнса Зайделя и Академии государственного управления при Президенте Республики Казахстан
                 </h3>
@@ -43,7 +42,7 @@
                 </p>
             </div>
             <div class="elementor-widget-wrap elementor-element-populated">
-                 {% for news in d %}
+                 {% for scholarship in d %}
                 <section
                     class="elementor-section elementor-inner-section elementor-element elementor-element-39402a4 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="39402a4" data-element_type="section"
@@ -58,9 +57,8 @@
                                     <div class="elementor-widget-container">
                                         <h5 class="elementor-heading-title elementor-size-default">
 
-                                            <a href="{% url 'detail_news' %}"> {{ news.name }}</a>
+                                            <a href="{% url 'detail' %}"> {{ scholarship.name }}</a>
                                         </h5>
-
                                     </div>
                                 </div>
                             </div>
@@ -68,8 +66,10 @@
                     </div>
                 </section>
                   {% endfor %}
+
             </div>
         </div>
     </div>
+    <!-- Testimonial End -->
 
 {% endblock %}

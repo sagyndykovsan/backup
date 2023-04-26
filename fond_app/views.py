@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 from fond_app.models import Book, Presentation, Video
 from scholarship.models import Scholarship
+from news.models import News
 
 
 def index(request):
@@ -22,3 +23,7 @@ def book(request):
 def video(request):
     v = Video.objects.all()
     return render(request, "video.html", {"v": v})
+
+def news(request):
+    n = News.objects.all()
+    return render(request, "news.html", {"n": n})
