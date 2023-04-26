@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'scholarship',
     'category',
     'qa',
+    'training',
 # <<<<<<< Updated upstream
     'contact',
 # =======
